@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700');
+
+body {
+    background-color: #62625C;
+}
+
+div.poster {
+    position: relative;
+    width: 768px;
+    height: 1073px;
+    background-color: #b6b5ba;
+    overflow: hidden;
+
+    // Geometric pattern
+    > figure {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 80px;
+        left: 40px;
+        width: 710px;
+        height: 710px;
+        transform: rotate(-45deg);
+
+        // Only show caption to screen readers
+        > figcaption {
+            position:absolute;
+            overflow:hidden;
+            left:-10000px;
+            top:auto;
+            width:1px;
+            height:1px;
+        }
+
+        // Rows
+        > div {
+            height: 50px;
+
+            &.tall {
+                height: 100px;
+            }
+
+            // Blocks in rows
+            > div.block {
+                display: inline-block;
+                height: 100%;
+                width: 50%;
+
+                &.full {
+                    width: 100%;
+                }
+
+                &.center {
+                    margin-left: 25%;
+                }
+
+                &.right {
+                    margin-left: 50%;
+                }
+
+                &.red {
+                    background-color: #4F0407;
+                }
+    
+                &.green {
+                    background-color: #434E31;
+                }
+    
+                &.black {
+                    background-color: #080804;
+                }
+            }
+        }
+    }
+
+    // Concert information
+    > main {
+        position: absolute;
+        left: 15px;
+        bottom: 0px;
+        height: 108px;
+        width: 100%;
+        overflow: hidden;
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 95%;
+        }
+
+        > div {
+            float: left;
+            padding-right: 8px;
+            width: 180px;
+        }
+    }
+}

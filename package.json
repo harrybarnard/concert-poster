@@ -1,0 +1,25 @@
+{
+  "name": "concert-poster",
+  "version": "1.0.0",
+  "main": "public/index.html",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Harry Barnard",
+    "email": "harry@harrybarnard.com",
+    "url": "https://harrybarnard.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:harrybarnard/concert-poster.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
